@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descricao do site">
     <meta name="keywords" content="palavras,chaves,do,site">
-    <link rel="stylesheet" href="estile/style.css">
+    <link rel="stylesheet" href="estilo/style.css">
     <title>projeto 01</title>
 
 </head>
