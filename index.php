@@ -3,13 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descricao do site">
     <meta name="keywords" content="palavras,chaves,do,site">
-    <link rel="stylesheet" href="estilo/style.css">
     <title>projeto 01</title>
+
+    <style>
+        div.overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: rgba(51, 51, 51, 0.2);
+        }
+
+        section.banner-principal form {
+            z-index: 2;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+    </style>
 
 </head>
 
@@ -37,14 +58,15 @@
         </div><!--center-->
     </header>
     <section class="banner-principal">
+        <div class="overlay"></div><!--overlay-->
         <div class="center">
             <form action="get">
                 <h2>Qual o seu melhor email</h2>
                 <input type="email" name="" id="" required>
                 <input type="submit" value="Cadastrar" name="acao">
             </form>
-
         </div>
+
     </section>
     <section class="descricao-autor">
         <div class="center">
