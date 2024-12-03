@@ -55,6 +55,10 @@ nav.desktop ul {
     list-style-type: none;
 
 }
+.mobile {
+    display: none;
+}
+
 
 nav.desktop li {
     display: inline-block;
@@ -69,14 +73,29 @@ nav.desktop a {
     text-transform: uppercase;
 
 }
-
-.mobile {
-    display: none;
-}
-
 section.banner-principal {
     width: 100%;
     height: 600px;
-    background-image: url("../img/3425225.jpg");
+    background-image: url("./img/3425225.jpg");
     background-size: cover;
+    position: relative;
+}
+
+div.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(51, 51, 51, 0.2);  
+}
+
+section.banner-principal form {
+    z-index: 2;  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);  
+    -ms-transform: translate(-50%, -50%); 
 }
