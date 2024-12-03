@@ -12,24 +12,7 @@
     <title>projeto 01</title>
 
     <style>
-        div.overlay {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            background-color: rgba(51, 51, 51, 0.2);
-        }
-
-        section.banner-principal form {
-            z-index: 2;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-        }
+     
     </style>
 
 </head>
