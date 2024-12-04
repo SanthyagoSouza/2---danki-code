@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,14 @@
     <title>projeto 01</title>
 
     <style>
-     
+        section.banner-principal {
+            width: 100%;
+            height: 600px;
+            background-image: url("./img/19187761.jpg");
+            background-size: cover;
+            position: relative;
+        }
+  
     </style>
 
 </head>
