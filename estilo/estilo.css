@@ -15,6 +15,7 @@
 
 .w33 {
     width: 33.3%;
+    padding: 0 10px;
 }
 
 .w50 {
@@ -62,6 +63,7 @@ nav.desktop ul {
 
 img {
     width: 100%;
+    max-width: 400px;
 }
 
 
@@ -140,7 +142,7 @@ section.banner-principal form input[type=submit] {
 }
 
 section.descricao-autor {
-    padding: 30px;
+    padding: 40px 0;
 }
 
 
@@ -153,7 +155,86 @@ section.descricao-autor h2 {
 section.descricao-autor p {
     font-size: 16px;
     color: #444;
+    font-weight: 300;
     margin-top: 10px;
+}
+
+section.especialidades {
+    padding: 40px 0;
+    background: #E2E2E2E2;
+}
+
+
+section.especialidades h2.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: #999;
+}
+
+.box-especialidades {
+    margin: 40px 0;
+    text-align: center;
+    padding: 0 30px;
+
+}
+
+.box-especialidades h3 {
+    color: #404580;
+    font-size: 40px;
+}
+
+.box-especialidades h4 {
+    color: #444;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+
+/*----------------mobile-------------------------*/
+
+@media screen and (max-width:768px) {
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        display: block;
+    }
+
+    .botao-menu-mobile {
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+
+    nav.mobile ul {
+        top: 55px;
+        z-index: 3;
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    nav.mobile li {
+        font-size: 17px;
+        width: 100%;
+        padding: 8px 0;
+        font-weight: 300;
+        background-color: white;
+        border-bottom: 1px solid #ccc;
+        display: block;
+
+    }
+
+    nav.mobile a {
+        color: #444;
+        text-decoration: none;
+        display: block;
+    }
 }
 
 /*media trabalha com responsividade, ou seja, ajustes especificos na pagina*/
@@ -163,10 +244,21 @@ section.descricao-autor p {
         /*importante forca o navegador a executar aqui*/
         display: block;
         margin: 0 auto;
-        max-width: 400px;
+
     }
 
     .w50 {
         width: 100%;
+        padding: 20px;
+    }
+
+    .w33 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .box-especialidades {
+        margin: 0px;
+        padding: 40px 20px;
     }
 }

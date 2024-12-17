@@ -36,6 +36,7 @@
                 </ul>
             </nav>
             <nav class="mobile right">
+                <div class="botao-menu-mobile"><i class="fa fa-bars" aria-hidden="true"></i></div>
                 <ul>
                     <li><a href=" ">Home</a></li>
                     <li><a href=" ">Sobre</a></li>
@@ -68,7 +69,7 @@
                     with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                     publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     It is a long established fact that a reader will be distracted by the readable content of a page
-                    when 
+                    when
                 </p>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
@@ -87,29 +88,30 @@
     </section>
 
     <section class="especialidades">
-        <div class="center">
-            <h2 class="title">Especialidades</h2>
-            <div class="w33 left box-especialidades">
-                <h3><i class="fa fa-css3" aria-hidden="true"></i></h3>
-                <h3>Css3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
-                    saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
-                    Asperiores, accusamus a. Soluta.</p>
-            </div>
-            <div class="w33 left box-especialidades">
-                <h3><i class="fa fa-html5" aria-hidden="true"></i></h3>
-                <h3>Html5</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
-                    saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
-                    Asperiores, accusamus a. Soluta.</p>
-            </div>
-            <div class="w33 left box-especialidades">
-                <h3><i class="fa fa-codepen" aria-hidden="true"></i></h3>
-                <h3>Java script</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
-                    saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
-                    Asperiores, accusamus a. Soluta.</p>
-            </div>
+            <div class="center">
+                <h2 class="title">Especialidades</h2>
+                <div class="w33 left box-especialidades">
+                    <h3><i class="fa fa-css3" aria-hidden="true"></i></h3>
+                    <h4>Css3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
+                        saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
+                        Asperiores, accusamus a. Soluta.</p>
+                </div>
+                <div class="w33 left box-especialidades">
+                    <h3><i class="fa fa-html5" aria-hidden="true"></i></h3>
+                    <h4>Html5</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
+                        saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
+                        Asperiores, accusamus a. Soluta.</p>
+                </div>
+                <div class="w33 left box-especialidades">
+                    <h3><i class="fa fa-codepen" aria-hidden="true"></i></h3>
+                    <h4>Java script</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
+                        saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
+                        Asperiores, accusamus a. Soluta.</p>
+                </div>
+            <div class="clear"></div>
         </div>
     </section>
     <section class="extras">
