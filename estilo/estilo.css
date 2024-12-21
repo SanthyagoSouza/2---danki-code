@@ -78,7 +78,12 @@ nav.desktop a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    transition: 1s;
 
+}
+nav.deskotop a:hover{
+    color: white;
+    text-decoration: none;
 }
 
 section.banner-principal {
