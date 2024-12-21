@@ -88,36 +88,36 @@
     </section>
 
     <section class="especialidades">
-            <div class="center">
-                <h2 class="title">Especialidades</h2>
-                <div class="w33 left box-especialidades">
-                    <h3><i class="fa fa-css3" aria-hidden="true"></i></h3>
-                    <h4>Css3</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
-                        saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
-                        Asperiores, accusamus a. Soluta.</p>
-                </div>
-                <div class="w33 left box-especialidades">
-                    <h3><i class="fa fa-html5" aria-hidden="true"></i></h3>
-                    <h4>Html5</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
-                        saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
-                        Asperiores, accusamus a. Soluta.</p>
-                </div>
-                <div class="w33 left box-especialidades">
-                    <h3><i class="fa fa-codepen" aria-hidden="true"></i></h3>
-                    <h4>Java script</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
-                        saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
-                        Asperiores, accusamus a. Soluta.</p>
-                </div>
+        <div class="center">
+            <h2 class="title">Especialidades</h2>
+            <div class="w33 left box-especialidades">
+                <h3><i class="fa fa-css3" aria-hidden="true"></i></h3>
+                <h4>Css3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
+                    saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
+                    Asperiores, accusamus a. Soluta.</p>
+            </div>
+            <div class="w33 left box-especialidades">
+                <h3><i class="fa fa-html5" aria-hidden="true"></i></h3>
+                <h4>Html5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
+                    saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
+                    Asperiores, accusamus a. Soluta.</p>
+            </div>
+            <div class="w33 left box-especialidades">
+                <h3><i class="fa fa-codepen" aria-hidden="true"></i></h3>
+                <h4>Java script</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
+                    saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
+                    Asperiores, accusamus a. Soluta.</p>
+            </div>
             <div class="clear"></div>
         </div>
     </section>
     <section class="extras">
         <div class="center">
-            <div class="w50 left">
-                <h2 class="title">depoimentos</h2>
+            <div class="w50 left deposimentos-container">
+                <h2 class="title">depoimentos dos nossos clientes</h2>
                 <div class="depoimentos-single">
                     <p class="depoimento-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
                         consequatur debitis totam sit
@@ -140,7 +140,7 @@
                     <p class="nome-autor">Lorem ipsum</p>
                 </div>
             </div><!--w50-->
-            <div class="w50 left">
+            <div class="w50 left servicos-container">
                 <h2 class="title">Servicos</h2>
                 <div class="servicos">
                     <ul>
@@ -153,6 +153,11 @@
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquam porro similique
                             accusantium molestiae blanditiis delectus corporis aspernatur facere explicabo iusto ab eos
                             qui, ducimus cum, inventore tempore eligendi voluptatum.</li>
+
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquam porro similique
+                            accusantium molestiae blanditiis delectus corporis aspernatur facere explicabo iusto ab eos
+                            qui, ducimus cum, inventore tempore eligendi voluptatum.</li>
+
                     </ul>
                 </div>
             </div><!--w50-->
