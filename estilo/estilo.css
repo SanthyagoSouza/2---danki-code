@@ -251,11 +251,39 @@ footer p {
     text-align: center;
     font-weight: bold;
     font-size: 15px;
+    font-weight: 400;
 }
 
 /*----------------mobile-------------------------*/
 
+
+/*media trabalha com responsividade, ou seja, ajustes especificos na pagina*/
 @media screen and (max-width:768px) {
+    img {
+        float: none !important;
+        /*importante forca o navegador a executar aqui*/
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    .w50 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .w33 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .box-especialidades {
+        margin: 0px;
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width:760px) {
     nav.desktop {
         display: none;
     }
@@ -295,31 +323,5 @@ footer p {
         color: #444;
         text-decoration: none;
         display: block;
-    }
-}
-
-/*media trabalha com responsividade, ou seja, ajustes especificos na pagina*/
-@media screen and (max-width:768px) {
-    img {
-        float: none !important;
-        /*importante forca o navegador a executar aqui*/
-        display: block;
-        margin: 0 auto;
-
-    }
-
-    .w50 {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .w33 {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .box-especialidades {
-        margin: 0px;
-        padding: 40px 20px;
     }
 }
