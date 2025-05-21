@@ -1,24 +1,19 @@
+<?php include('config.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="stylesheet"  href="<?php echo INCLUDES_PATH; ?>estilo/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo INCLUDES_PATH; ?>path/to/font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descricao do site">
     <meta name="keywords" content="palavras,chaves,do,site">
     <title>projeto 01</title>
 
     <style>
-        section.banner-principal {
-            width: 100%;
-            height: 600px;
-            background-image: url("./img/19187761.jpg");
-            background-size: cover;
-            position: relative;
-        }
+       
     </style>
 
 </head>
@@ -26,22 +21,22 @@
 <body>
     <header>
         <div class="center">
-            <div class="logo left">logomarca</div>
+            <div class="logo left"><a href=""> logomarca </a></div>
             <nav class="desktop right">
                 <ul>
-                    <li><a href=" ">Home</a></li>
-                    <li><a href=" ">Sobre</a></li>
-                    <li><a href=" ">Servicos</a></li>
-                    <li><a href=" ">Contato</a></li>
+                    <li><a href="<?php echo INCLUDES_PATH; ?> ">Home</a></li>
+                    <li><a href="<?php echo INCLUDES_PATH; ?>Sobre ">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDES_PATH; ?>Servicos ">Servicos</a></li>
+                    <li><a href="<?php echo INCLUDES_PATH; ?>Contato ">Contato</a></li>
                 </ul>
             </nav>
             <nav class="mobile right">
                 <div class="botao-menu-mobile"><i class="fa fa-bars" aria-hidden="true"></i></div>
                 <ul>
-                    <li><a href=" ">Home</a></li>
-                    <li><a href=" ">Sobre</a></li>
-                    <li><a href=" ">Servicos</a></li>
-                    <li><a href=" ">Contato</a></li>
+                    <li><a href="<?php echo INCLUDES_PATH; ?> ">Home</a></li>
+                    <li><a href="<?php echo INCLUDES_PATH; ?>Sobre ">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDES_PATH; ?>Servicos ">Servicos</a></li>
+                    <li><a href="<?php echo INCLUDES_PATH; ?>Contato ">Contato</a></li>
                 </ul>
             </nav>
             <div class="clear"></div><!--clear-->
@@ -81,7 +76,7 @@
                 </p>
             </div><!--w50-->
             <div class="w50 left">
-                <img class="right" src="https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
+                <img class="right" src="<?php echo INCLUDES_PATH; ?> https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
             </div><!--w50-->
             <div class="clear"></div>
         </div>
@@ -169,8 +164,8 @@
             <p>Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="script/node_modules/jquery/dist/jquery.js"></script>
-    <script src="js/script.js"></script>
+    <script src="<?php echo INCLUDES_PATH; ?>script/node_modules/jquery/dist/jquery.js"></script>
+    <script src="<?php echo INCLUDES_PATH; ?>js/script.js"></script>
     <script>
 
 
