@@ -169,13 +169,12 @@
             <p>Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="../2 - danki code/script/script.js"></script>
-    <script src="../2 - danki code/script/node_modules/jquery/dist/jquery.js"></script>
+    <script src="script/node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/script.js"></script>
     <script>
-        $(function(){
-            alert("Funcionando");
-        })
+
 
     </script>
 </body>
+
 </html>
