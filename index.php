@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet"  href="<?php echo INCLUDES_PATH; ?>estilo/estilo.css">
+    <link rel="stylesheet" href="<?php echo INCLUDES_PATH; ?>estilo/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo INCLUDES_PATH; ?>path/to/font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,7 @@
     <meta name="keywords" content="palavras,chaves,do,site">
     <title>projeto 01</title>
 
-    <style>
-       
-    </style>
+
 
 </head>
 
@@ -42,134 +40,66 @@
             <div class="clear"></div><!--clear-->
         </div><!--center-->
     </header>
-    <section class="banner-principal">
-        <div class="overlay"></div><!--overlay-->
-        <div class="center">
-            <form action="get">
-                <h2>Qual o seu melhor email</h2>
-                <input type="email" name="" id="" required>
-                <input type="submit" value="Cadastrar" name="acao">
-            </form>
-        </div>
 
-    </section>
-    <section class="descricao-autor">
-        <div class="center">
-            <div class="w50 left">
-                <h2>Santhyago Souza</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when
-                </p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    It is a lo
-                </p>
-            </div><!--w50-->
-            <div class="w50 left">
-                <img class="right" src="<?php echo INCLUDES_PATH; ?> https://cdn-icons-png.flaticon.com/512/1373/1373255.png" alt="">
-            </div><!--w50-->
-            <div class="clear"></div>
-        </div>
-    </section>
+    <?php
+    $url = isset($_GET['url']) ? $_GET['url'] : 'home';
 
-    <section class="especialidades">
-        <div class="center">
-            <h2 class="title">Especialidades</h2>
-            <div class="w33 left box-especialidades">
-                <h3><i class="fa fa-css3" aria-hidden="true"></i></h3>
-                <h4>Css3</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
-                    saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
-                    Asperiores, accusamus a. Soluta.</p>
-            </div>
-            <div class="w33 left box-especialidades">
-                <h3><i class="fa fa-html5" aria-hidden="true"></i></h3>
-                <h4>Html5</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
-                    saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
-                    Asperiores, accusamus a. Soluta.</p>
-            </div>
-            <div class="w33 left box-especialidades">
-                <h3><i class="fa fa-codepen" aria-hidden="true"></i></h3>
-                <h4>Java script</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse delectus, nobis voluptatum tempore
-                    saepe rerum eos alias id modi laboriosam aliquam voluptatem voluptatibus magni, dolorum ipsam!
-                    Asperiores, accusamus a. Soluta.</p>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </section>
-    <section class="extras">
-        <div class="center">
-            <div class="w50 left deposimentos-container">
-                <h2 class="title">depoimentos dos nossos clientes</h2>
-                <div class="depoimentos-single">
-                    <p class="depoimento-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-                        consequatur debitis totam sit
-                        rem, sapiente ea delectus veritatis sed. Corrupti magni quam commodi error quae ratione,
-                        deserunt facere nemo? Maxime!</p>
-                    <p class="nome-autor">Lorem ipsum</p>
-                </div>
-                <div class="depoimentos-single">
-                    <p class="depoimento-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-                        consequatur debitis totam sit
-                        rem, sapiente ea delectus veritatis sed. Corrupti magni quam commodi error quae ratione,
-                        deserunt facere nemo? Maxime!</p>
-                    <p class="nome-autor">Lorem ipsum</p>
-                </div>
-                <div class="depoimentos-single">
-                    <p class="depoimento-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-                        consequatur debitis totam sit
-                        rem, sapiente ea delectus veritatis sed. Corrupti magni quam commodi error quae ratione,
-                        deserunt facere nemo? Maxime!</p>
-                    <p class="nome-autor">Lorem ipsum</p>
-                </div>
-            </div><!--w50-->
-            <div class="w50 left servicos-container">
-                <h2 class="title">Servicos</h2>
-                <div class="servicos">
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquam porro similique
-                            accusantium molestiae blanditiis delectus corporis aspernatur facere explicabo iusto ab eos
-                            qui, ducimus cum, inventore tempore eligendi voluptatum.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquam porro similique
-                            accusantium molestiae blanditiis delectus corporis aspernatur facere explicabo iusto ab eos
-                            qui, ducimus cum, inventore tempore eligendi voluptatum.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquam porro similique
-                            accusantium molestiae blanditiis delectus corporis aspernatur facere explicabo iusto ab eos
-                            qui, ducimus cum, inventore tempore eligendi voluptatum.</li>
+    if (file_exists('pages/' . $url . '.php')) {
+        include('pages/' . $url . '.php');
+    } else {
+        $pagina404 = true;
+        include('pages/404.php');
+    }
+    ?>
 
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquam porro similique
-                            accusantium molestiae blanditiis delectus corporis aspernatur facere explicabo iusto ab eos
-                            qui, ducimus cum, inventore tempore eligendi voluptatum.</li>
 
-                    </ul>
-                </div>
-            </div><!--w50-->
-            <div class="clear"></div>
-        </div>
-    </section>
-    <footer>
+    <footer <?php if (isset($pagina404) && $pagina404 == true) {
+        echo 'class="fixed"';
+    } ?>>
         <div class="center">
             <p>Todos os direitos reservados</p>
         </div>
     </footer>
     <script src="<?php echo INCLUDES_PATH; ?>script/node_modules/jquery/dist/jquery.js"></script>
     <script src="<?php echo INCLUDES_PATH; ?>js/script.js"></script>
+
+    <?php if (isset($contato) && $contato == true){ 
+        
+        ?>
     <script>
-
-
+        (g => {
+            var h, a, k, p = "The Google Maps JavaScript API",
+                c = "google",
+                l = "importLibrary",
+                q = "__ib__",
+                m = document,
+                b = window;
+            b = b[c] || (b[c] = {});
+            var d = b.maps || (b.maps = {}),
+                r = new Set,
+                e = new URLSearchParams,
+                u = () => h || (h = new Promise(async (f, n) => {
+                    await (a = m.createElement("script"));
+                    e.set("libraries", [...r] + "");
+                    for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+                    e.set("callback", c + ".maps." + q);
+                    a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+                    d[q] = f;
+                    a.onerror = () => h = n(Error(p + " could not load."));
+                    a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+                    m.head.append(a)
+                }));
+            d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+        })({
+            key: "AIzaSyDHPNQxozOzQSZ-djvWGOBUsHkBUoT_qH4",
+            v: "weekly",
+        });
     </script>
+    <script src="<?php echo INCLUDES_PATH; ?>/js/map.js"></script>
+
+   <?php  } 
+   
+   ?>
 </body>
 
 </html>
