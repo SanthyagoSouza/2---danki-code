@@ -11,10 +11,36 @@
 <section class="banner-principal">
     <div class="overlay"></div><!--overlay-->
     <div class="center">
-
-        <form action="get">
+<?php
+if (isset($_POST['acao'])) {
+    $email = $_POST['email'] ?? '';
+    if ($email != '') {
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $mail = new Email('smtp.hostinger.com', 'santhaygoponciano@145jacare.com', 'Extrabom@2023', 'Santhyago');
+            $mail->addAddress('santhyagoponciano@gmail.com', 'Santhyago');
+            
+            $mail->formatarEmail(array(
+                'assunto' => 'Um novo e-mail cadastrado no site',
+                'corpo' => 'Email que foi cadastrado no site: ' . $email
+            )); 
+            // $mail->formatarEmail($info);  
+            if($mail->enviarEmail()){
+                    echo '<script>alert("email enviado na func enviarEmail")</script>';
+                } else {
+                    echo '<script>alert("Deu bosta")</script>';
+                }
+        } else {
+            echo '<script>alert("E-mail inválido")</script>';
+        }
+    } else {
+        echo '<script>alert("Preencha o campo e-mail")</script>';
+    }
+}
+ 
+?>
+        <form method="post">
             <h2>Qual o seu melhor email</h2>
-            <input type="email" name="" id="" required>
+            <input type="email" name="email" id="email" required>
             <input type="submit" value="Cadastrar" name="acao">
         </form>
     </div>
@@ -51,7 +77,7 @@
 </section>
 
 <section class="especialidades">
-    <div class="center">
+    <div class="center" id="servicos">
         <h2 class="title">Especialidades</h2>
         <div class="w33 left box-especialidades">
             <h3><i class="fa fa-css3" aria-hidden="true"></i></h3>
@@ -77,8 +103,8 @@
         <div class="clear"></div>
     </div>
 </section>
-<section class="extras">
-    <div class="center">
+<section class="extras" id="">
+    <div class="center" >
         <div class="w50 left deposimentos-container">
             <h2 class="title">depoimentos dos nossos clientes</h2>
             <div class="depoimentos-single">
@@ -105,7 +131,7 @@
         </div><!--w50-->
         <div class="w50 left servicos-container">
             <h2 class="title">Servicos</h2>
-            <div class="servicos">
+            <div class="servicos" id="depoimentos">
                 <ul>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquam porro similique
                         accusantium molestiae blanditiis delectus corporis aspernatur facere explicabo iusto ab eos
