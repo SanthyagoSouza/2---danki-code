@@ -11,34 +11,27 @@
 <section class="banner-principal">
     <div class="overlay"></div><!--overlay-->
     <div class="center">
-<?php
-if (isset($_POST['acao'])) {
-    $email = $_POST['email'] ?? '';
-    if ($email != '') {
-        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $mail = new Email('smtp.hostinger.com', 'santhaygoponciano@145jacare.com', '', 'Santhyago');
-            // Lembrar de retirar dados de email quando for fazer commit no github
-            $mail->addAddress('santhyagoponciano@gmail.com', 'Santhyago');
+        <?php
+        if (isset($_POST['acao'])) {
+            $email = $_POST['email'] ?? '';
+            if ($email != '') {
+                if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    $mail = new Email('smtp.hostinger.com', 'santhaygoponciano@145jacare.com', '', 'Santhyago');
+                    // Lembrar de retirar dados de email quando for fazer commit no github
+                    $mail->addAddress('santhyagoponciano@gmail.com', 'Santhyago');
 
-            $mail->formatarEmail(array(
-                'assunto' => 'Um novo e-mail cadastrado no site',
-                'corpo' => 'Email que foi cadastrado no site: ' . $email
-            )); 
-            // $mail->formatarEmail($info);  
-            if($mail->enviarEmail()){
-                    echo '<script>alert("email enviado na func enviarEmail")</script>';
+                    $mail->formatarEmail(array(
+                        'assunto' => 'Um novo e-mail cadastrado no site',
+                        'corpo' => 'Email que foi cadastrado no site: ' . $email
+                    ));
+
                 } else {
-                    echo '<script>alert("Deu bosta")</script>';
+                    echo '<script>alert("Preencha o campo e-mail")</script>';
                 }
-        } else {
-            echo '<script>alert("E-mail inválido")</script>'; 
+            }
         }
-    } else {
-        echo '<script>alert("Preencha o campo e-mail")</script>';
-    }
-}
- 
-?>
+
+        ?>
         <form method="post">
             <h2>Qual o seu melhor email</h2>
             <input type="email" name="email" id="email" required>
@@ -105,7 +98,7 @@ if (isset($_POST['acao'])) {
     </div>
 </section>
 <section class="extras" id="">
-    <div class="center" >
+    <div class="center">
         <div class="w50 left deposimentos-container">
             <h2 class="title">depoimentos dos nossos clientes</h2>
             <div class="depoimentos-single">
