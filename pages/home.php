@@ -16,7 +16,7 @@ if (isset($_POST['acao'])) {
     $email = $_POST['email'] ?? '';
     if ($email != '') {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $mail = new Email('smtp.hostinger.com', '', '3', 'Santhyago');
+            $mail = new Email('smtp.hostinger.com', '', '', 'Santhyago');
             $mail->addAddress('santhyagoponciano@gmail.com', 'Santhyago');
             
             $mail->formatarEmail(array(
