@@ -17,8 +17,9 @@ if (isset($_POST['acao'])) {
     if ($email != '') {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $mail = new Email('smtp.hostinger.com', 'santhaygoponciano@145jacare.com', 'Extrabom@2023', 'Santhyago');
+            // Lembrar de retirar dados de email quando for fazer commit no github
             $mail->addAddress('santhyagoponciano@gmail.com', 'Santhyago');
-            
+
             $mail->formatarEmail(array(
                 'assunto' => 'Um novo e-mail cadastrado no site',
                 'corpo' => 'Email que foi cadastrado no site: ' . $email
@@ -30,7 +31,7 @@ if (isset($_POST['acao'])) {
                     echo '<script>alert("Deu bosta")</script>';
                 }
         } else {
-            echo '<script>alert("E-mail inválido")</script>';
+            echo '<script>alert("E-mail inválido")</script>'; 
         }
     } else {
         echo '<script>alert("Preencha o campo e-mail")</script>';
