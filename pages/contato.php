@@ -1,3 +1,7 @@
+<!--Parei nos 10 minutos da video aula, pulei a parte que trabalha com o map do google e so vou focar no que me interessa
+colocar mapa eu aprendo depois, preciso aprender a fazer backend
+-->
+
 <?php
 if (isset($_POST['acao'])) {
   $nome = $_POST['nome'] ?? '';
@@ -7,19 +11,32 @@ if (isset($_POST['acao'])) {
 
   if ($email != '' && $nome != '' && $telefone != '' && $mensagem != '') {
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $mail = new Email('smtp.hostinger.com', 'santhaygoponciano@145jacare.com', '', 'Santhyago');
+      $mail = new Email('smtp.hostinger.com', 'santhaygoponciano@145jacare.com', 'Extrabom@2023', 'Santhyago');
       // Lembrar de retirar dados de email quando for fazer commit no github
       $mail->addAddress('santhyagoponciano@gmail.com', 'Santhyago');
 
       $mail->formatarEmail(array(
         'assunto' => 'teste',
-        'corpo' => 'Nome: ' . $nome . "<br />" .
-          'Email: ' . $email . "<br />" .
-          'Telefone: ' . $telefone . "<br />" .
-          'Mensagem: ' . $mensagem
+        'corpo' => 'Nome:  ' . $nome . "<br />" .
+          'Email:  ' . $email . "<br />" .
+          'Telefone:  ' . $telefone . "<br />" .
+          'Mensagem:  ' . $mensagem
       ));
-   
-    }}}
+      // $mail->formatarEmail($info);  
+
+
+      if ($mail->enviarEmail()) {
+        echo '<script>alert("email enviado na func enviarEmail")</script>';
+      } else {
+        echo '<script>alert("Deu bosta")</script>';
+      }
+    } else {
+      echo '<script>alert("E-mail inválido")</script>';
+    }
+  } else {
+    echo '<script>alert("Preencha o campo e-mail")</script>';
+  }
+}
 ?>
 <div class="contato-container">
   <h1>Deixe aqui sua mensagem!</h1>
