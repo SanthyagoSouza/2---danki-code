@@ -123,8 +123,8 @@
                     }));
                 d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
             })({
-                key: "AIzaSyDHPNQxozOzQSZ-djvWGOBUsHkBUoT_qH4",
-                v: "weekly",
+                key: "",
+                v: "",
             });
         </script>
         <script src="<?php echo INCLUDES_PATH; ?>/js/map.js"></script>
