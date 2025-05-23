@@ -1,7 +1,3 @@
-<!--Parei nos 10 minutos da video aula, pulei a parte que trabalha com o map do google e so vou focar no que me interessa
-colocar mapa eu aprendo depois, preciso aprender a fazer backend
--->
-
 <?php
 if (isset($_POST['acao'])) {
   $nome = $_POST['nome'] ?? '';
@@ -23,7 +19,7 @@ if (isset($_POST['acao'])) {
           'Mensagem: ' . $mensagem
       ));
    
-    }
+    }}}
 ?>
 <div class="contato-container">
   <h1>Deixe aqui sua mensagem!</h1>

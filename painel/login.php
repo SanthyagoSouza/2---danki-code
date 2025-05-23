@@ -15,6 +15,7 @@
             <input type="text" name="user" placeholder="login.." required>
             <input type="text" name="password" placeholder="Senha.."required>
             <input type="submit" name="acao" value="Logar">
+            <p><a href="">Recuperar Senha</a></p>
         </form>
     </div> <!-- box-login -->
 </body>
