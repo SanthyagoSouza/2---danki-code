@@ -16,7 +16,7 @@ if (isset($_POST['acao'])) {
     $email = $_POST['email'] ?? '';
     if ($email != '') {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $mail = new Email('smtp.hostinger.com', 'santhaygoponciano@145jacare.com', 'Extrabom@2023', 'Santhyago');
+            $mail = new Email('smtp.hostinger.com', 'santhaygoponciano@145jacare.com', '', 'Santhyago');
             // Lembrar de retirar dados de email quando for fazer commit no github
             $mail->addAddress('santhyagoponciano@gmail.com', 'Santhyago');
 
