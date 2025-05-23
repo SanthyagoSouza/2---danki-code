@@ -1,4 +1,10 @@
-<?php include('pages_protegidas.php'); ?>
+<?php include('pages_protegidas.php'); 
+if(isset($_GET['loggout'])){
+    Painel::loggout();
+ 
+}
+
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +16,20 @@
 </head>
 
 <body>
+    <div class="menu"></div>
+
+    <header>
+
+        <div class="center">
+
+            <div class="loggout">
+                <a href="?loggout"><i class="fa fa-window-close"></i></a>
+            </div> <!-- loggout -->
+            <div class="clear"></div>
+        </div>
+    </header>
+  
 
 </body>
+
 </html>
