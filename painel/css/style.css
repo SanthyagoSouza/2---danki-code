@@ -121,44 +121,86 @@ body {
 
 /* painel de controle */
 .clear {
-    clear: both;
-  }
-  
-  .center {
-    padding: 0 2%;
-    margin: 0 auto;
-  }
-  
-  div.menu {
-    overflow-y:auto ;
-    height: 100%;
-    background-color: #1F2B3A;
-    float: left;
-    width: 300px;
-    color: rgba(255,255,255,0.9);
-    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
-  }
-  
-  header {
-    float: left;
-    padding: 10px 0;
-    background-color: #27394D;
-    width: calc(100% - 300px);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  }
-  
-  .loggout {
-    float: right;
-  }
-  
-  .loggout a {
-    margin-right: 5px;
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .loggout a:hover {
-    color: #00BFA6;
-  }
+  clear: both;
+}
+
+.center {
+  padding: 0 2%;
+  margin: 0 auto;
+}
+
+header {
+  float: left;
+  padding: 10px 0;
+  background-color: #27394d;
+  width: calc(100% - 300px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.loggout {
+  float: right;
+}
+
+.loggout a > span {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.loggout a {
+  margin-right: 5px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.loggout a:hover {
+  color: #00bfa6;
+}
+
+.menu-btn {
+  float: left;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+div.menu {
+  overflow-y: auto;
+  height: 100%;
+  background-color: #1f2b3a;
+  padding: 10px;
+  float: left;
+  width: 300px;
+  color: rgba(255, 255, 255, 0.9);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+div.box-usuario {
+  text-align: center;
+}
+
+.avatar-usuario {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: solid 1px #2f3d42;
+}
+.avatar-usuario i {
+  position: relative;
+  left: 1%;
+  top: 25%;
+  font-size: 50px;
+  color: white;
+}
+.nome-usuario{
+  text-aligh:center;
+  margin-top:8px;
+}
+
+.nome-usuario p{
+  color:white;
+  font-size:16px;
+  font-weight:300;
+
+}

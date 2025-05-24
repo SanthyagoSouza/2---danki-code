@@ -12,13 +12,15 @@ $autoload = function ($class) {
 spl_autoload_register($autoload);
 
 define('INCLUDES_PATH', 'http://localhost/4%20-%20danki-code/');
-define('INCLUDES_PATH_PAINEL', INCLUDES_PATH.'painel/');
+define('INCLUDES_PATH_PAINEL', INCLUDES_PATH . 'painel/');
 
 
 //conexao com banco de dados
 define('HOST', 'localhost');
 define('DATABASE', 'projeto01');
 define('USER', 'root');
-define('PASSWORD','');
+define('PASSWORD', '');
+
+
 
 ?>

@@ -1,4 +1,8 @@
-<?php include('pages_protegidas.php'); ?>
+<?php 
+include('pages_protegidas.php'); 
+include('../classes/Usuario.php'); 
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,16 +22,9 @@
             $user = $_POST['user'];
             $password = $_POST['password'];
 
-            $pdo = Mysql::conectar();
-            $sql = $pdo->prepare("SELECT * FROM admin_usuario WHERE login = ? AND senha = ?");
-            $sql->execute([$user, $password]);
-
-            if ($sql->rowCount() == 1) {
-                $_SESSION['login'] = true;
-                $_SESSION['user'] = $user;
-                $_SESSION['password'] = $password;
+            if (Usuario::login($user, $password)) {
                 header('Location: ' . INCLUDES_PATH_PAINEL);
-                die();
+                exit();
             } else {
                 echo '<div class="erro-box"><i class="fa fa-times"></i>Usuário ou senha incorretos.</div>';
             }
@@ -42,4 +39,5 @@
         </form>
     </div> <!-- box-login -->
 </body>
+
 </html>
